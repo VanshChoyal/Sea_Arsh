@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - SeaArsh</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+    <script src="https://botlink.appscriptify.com/cdn/botlink/botlink.js" AS_KEY="as_pub_3f7e59e05c2bf95c"></script>
+
+</head>
+<body class="dark">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">🌿 SeaArsh</div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/shop">Shop</a></li>
+            <li><a href="/about" class="active">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/cart" class="cart-btn">🛒 Cart</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Hero -->
+    <section class="about-hero">
+        <div class="text">
+            <h1>Our Mission</h1>
+            <p>We are on a mission to eliminate plastic waste using future-ready seaweed-based materials that are biodegradable, ocean-safe, and visually beautiful.</p>
+        </div>
+        <img src="{{ url_for('static', filename='images/sea_weed.jpg') }}" alt="Seaweed technology">
+    </section>
+
+    <!-- Long Story Section -->
+    <section class="story-section">
+        <h2>Our Story</h2>
+        <p>
+            SeaArsh began with a simple observation: plastic is everywhere. From food packaging to daily-use bags, 
+            single-use plastics dominate our lives—yet they remain in the environment for hundreds of years. 
+            Our founders realized that to create real change, sustainability must be convenient, affordable, and modern.
+        </p>
+
+        <p>
+            After months of research, experimenting with natural fibers, and exploring different biomaterials, 
+            we discovered the incredible potential of **seaweed-based polymers**. Seaweed grows rapidly, 
+            requires no freshwater, regenerates naturally, and absorbs CO₂ as it grows. 
+            This made it the perfect foundation for a new generation of biodegradable packaging.
+        </p>
+
+        <p>
+            Today, SeaArsh produces packaging that is strong, stylish, food-safe, and completely harmless to marine life. 
+            Our products are designed not only to reduce waste but to inspire others to adopt sustainable solutions.
+        </p>
+    </section>
+    <!-- Growth Graph Section -->
+    <section class="growth">
+        <h2>Rise of Seaweed Packaging Over the Years</h2>
+        <p>Global adoption of seaweed-based packaging has grown rapidly due to sustainability demands and advancements in biomaterial technology.</p>
+
+        <div class="graph-container">
+            <canvas id="seaweedGrowthChart"></canvas>
+        </div>
+    </section>
+
+
+    <!-- Technology -->
+    <section class="technology">
+        <h2>Our Technology</h2>
+        <div class="tech-grid">
+            <div class="tech-card">
+                <h3>🧬 Seaweed Biopolymer</h3>
+                <p>We extract natural polysaccharides from seaweed to form a strong, flexible, biodegradable film.</p>
+            </div>
+            <div class="tech-card">
+                <h3>🌊 Ocean-Safe Materials</h3>
+                <p>Our products dissolve naturally in seawater without harming ecosystems.</p>
+            </div>
+            <div class="tech-card">
+                <h3>🔥 Fully Compostable</h3>
+                <p>Dissolves in water like magic!!</p>
+            </div>
+            <div class="tech-card">
+                <h3>♻ Zero-Waste Production</h3>
+                <p>Manufactured using low-energy processes and minimal carbon footprint.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values -->
+    <section class="values">
+        <h2>Our Core Values</h2>
+        <div class="value-grid">
+            <div class="value-card">
+                <h3>🌍 Sustainability</h3>
+                <p>We design packaging that benefits both people and the planet.</p>
+            </div>
+            <div class="value-card">
+                <h3>🔬 Innovation</h3>
+                <p>We aim to make our world plastic free, and promote our Eco-Friendly bioplastic - SeaWeed Packaging.</p>
+            </div>
+            <div class="value-card">
+                <h3>💚 Responsibility</h3>
+                <p>Every decision we make aims to protect natural ecosystems.</p>
+            </div>
+            <div class="value-card">
+                <h3>🤝 Community</h3>
+                <p>We collaborate with local growers, businesses, and environmental groups.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Impact Section -->
+    <section class="impact">
+        <h2>Our Environmental Impact</h2>
+        <p>
+            At SeaArsh, impact matters. Our seaweed packaging not only eliminates plastic waste but also 
+            contributes to restoring marine ecosystems and supporting coastal farming communities. 
+            Through sustainable harvesting, we ensure that seaweed forests remain healthy and thriving.
+        </p>
+
+        <div class="impact-stats">
+            <div class="stat">
+                <h3>92%</h3>
+                <p>Less carbon footprint than traditional plastic.</p>
+            </div>
+            <div class="stat">
+                <h3>100%</h3>
+                <p>Biodegradable & compostable materials.</p>
+            </div>
+            <div class="stat">
+                <h3>0%</h3>
+                <p>Plastic or chemical additives used.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section class="team">
+        <h2>Meet The Team</h2>
+        <div class="team-grid">
+
+            <div class="team-card">
+                <h3>Vansh</h3>
+                <p>Website & Research Lead</p>
+            </div>
+
+            <div class="team-card">
+                <h3>Sarthak</h3>
+                <p>Production & Quality Supervisor</p>
+            </div>
+
+            <div class="team-card">
+                <h3>Harsh</h3>
+                <p>Design & Product Development</p>
+            </div>
+
+            <div class="team-card">
+                <h3>Manvi</h3>
+                <p>Branding & Sustainability Strategist</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 SeaArsh — Biodegradable solutions for a cleaner planet.</p>
+    </footer>
+
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="{{ url_for('static', filename='js/about.js') }}"></script>
+</body>
+</html>

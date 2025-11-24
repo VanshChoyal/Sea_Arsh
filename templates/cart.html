@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cart.css') }}">
+    <script src="https://botlink.appscriptify.com/cdn/botlink/botlink.js" AS_KEY="as_pub_3f7e59e05c2bf95c"></script>
+
+</head>
+<body>
+
+<div class="cart-container">
+    <h1>Your Cart</h1>
+
+    <div id="cart-items">
+        {% for item in cart %}
+        <div class="cart-item" data-id="{{ item.id }}">
+            
+            <!-- Checkbox for selecting item -->
+            <input type="checkbox" class="select-item">
+    
+            <img src="{{ item.image }}" alt="{{ item.name }}">
+    
+            <div class="cart-details">
+                <h2>{{ item.name }}</h2>
+                <p class="price">₹{{ item.price }}</p>
+    
+                <div class="qty-controls">
+                    <button class="qty-btn decrease">−</button>
+                    <span class="qty">{{ item.qty }}</span>
+                    <button class="qty-btn increase">+</button>
+                </div>
+            </div>
+    
+            <p class="item-total">₹{{ item.total }}</p>
+        </div>
+        {% endfor %}
+    </div>
+    
+
+    <div class="cart-summary">
+        <h2>Selected Total: ₹<span id="selected-total">0</span></h2>
+        <button id="checkout-button" class="checkout-btn">Checkout</button>
+    </div>
+    
+</div>
+
+<script src="{{ url_for('static', filename='js/cart.js') }}"></script>
+
+</body>
+</html>

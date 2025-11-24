@@ -1,0 +1,346 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0d1117;
+    color: #e6edf3;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #161b22;
+    padding: 1rem 3rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #38bdf8;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #e6edf3;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 6rem;
+    background: linear-gradient(90deg, #0d1117, #161b22);
+}
+
+.hero-text {
+    max-width: 45%;
+}
+
+.hero-text h1 {
+    font-size: 2.8rem;
+    color: #58a6ff;
+}
+
+.hero-text p {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: #c9d1d9;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    background-color: #38bdf8;
+    color: #0d1117;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #0ea5e9;
+}
+
+.hero-image img {
+    width: 420px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
+}
+
+/* Features Section */
+.features {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.features h2 {
+    color: #58a6ff;
+    margin-bottom: 2rem;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background-color: #161b22;
+    padding: 1.5rem;
+    border-radius: 12px;
+    width: 280px;
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+}
+
+.feature img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+/* Products Section */
+.products {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #0d1117;
+}
+
+.products h2 {
+    color: #58a6ff;
+    margin-bottom: 2rem;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.product-card {
+    background-color: #161b22;
+    border-radius: 12px;
+    padding: 1.5rem;
+    width: 260px;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+/* Newsletter */
+.newsletter {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #161b22;
+}
+
+.newsletter form {
+    margin-top: 1.5rem;
+}
+
+.newsletter input {
+    padding: 0.8rem;
+    width: 250px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.newsletter button {
+    margin-left: 0.5rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #0d1117;
+    color: #8b949e;
+}
+
+/* Product Detail Page */
+.product-detail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 4rem 2rem;
+    background-color: #0d1117;
+    gap: 3rem;
+}
+
+.product-image img {
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(88, 166, 255, 0.2);
+}
+
+.product-info {
+    max-width: 500px;
+}
+
+.product-info h1 {
+    color: #58a6ff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.product-desc {
+    color: #c9d1d9;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.product-price {
+    color: #38bdf8;
+    margin-bottom: 1.5rem;
+}
+
+.btn-outline {
+    display: inline-block;
+    margin-left: 1rem;
+    padding: 0.8rem 1.5rem;
+    border: 2px solid #38bdf8;
+    border-radius: 8px;
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    background-color: #38bdf8;
+    color: #0d1117;
+}
+/* Product Detail Page */
+.product-detail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 4rem 2rem;
+    background-color: #0d1117;
+    gap: 3rem;
+}
+
+.product-image img {
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(88, 166, 255, 0.2);
+}
+
+.product-info {
+    max-width: 500px;
+}
+
+.product-info h1 {
+    color: #58a6ff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.product-desc {
+    color: #c9d1d9;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.product-price {
+    color: #38bdf8;
+    margin-bottom: 1.5rem;
+}
+
+.btn-outline {
+    display: inline-block;
+    margin-left: 1rem;
+    padding: 0.8rem 1.5rem;
+    border: 2px solid #38bdf8;
+    border-radius: 8px;
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    background-color: #38bdf8;
+    color: #0d1117;
+}
+
+/* Biodegradation Graph Section */
+.biodegrade-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: #0d1117;
+    color: #ffffff;
+}
+
+.biodegrade-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #58a6ff;
+}
+
+.biodegrade-section p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #c9d1d9;
+}
+
+/* Chart Container */
+.chart-wrapper {
+    width: 90%;
+    max-width: 900px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #161b22;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Make canvas smooth */
+#bioTimelineChart {
+    background: transparent;
+}

@@ -1,0 +1,26 @@
+/* Dark themed minimal login page styles */
+:root{
+	--bg: #071021;      /* page background */
+	--card: #0f1724;    /* card/background */
+	--accent: #22d3ee;  /* cyan accent */
+	--muted: #94a3b8;   /* muted text */
+	--text: #e6eef8;    /* main text */
+	--input-bg: #0b1320;/* input bg */
+	--input-border: #233145;
+}
+
+*{box-sizing:border-box;font-family:Inter,Arial,Helvetica,sans-serif}
+body{margin:0;background:var(--bg);color:var(--text);display:flex;align-items:center;justify-content:center;height:100vh}
+.login-container{width:100%;max-width:420px;padding:24px}
+.login-form{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:26px;border-radius:10px;border:1px solid rgba(255,255,255,0.03);box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+.login-form h1{margin:0 0 10px;font-size:22px;color:var(--text)}
+.login-form label{display:block;margin-top:12px;font-size:13px;color:var(--muted)}
+.login-form input{width:100%;padding:12px 14px;margin-top:6px;background:var(--input-bg);border:1px solid var(--input-border);border-radius:8px;font-size:14px;color:var(--text)}
+.login-form input::placeholder{color:#64748b}
+.submit-btn{width:100%;margin-top:20px;padding:12px 14px;background:linear-gradient(90deg,var(--accent),#06b6d4);color:#02121a;border:none;border-radius:8px;font-weight:700;cursor:pointer}
+.submit-btn:hover{filter:brightness(.98)}
+.signup{margin-top:14px;text-align:center;color:var(--muted);font-size:14px}
+.signup a{color:var(--accent);text-decoration:none;font-weight:600}
+.signup a:hover{text-decoration:underline;opacity:0.95}
+
+@media (max-width:420px){.login-container{padding:16px}.login-form{padding:18px}}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ product.name }} | SeaWeed Packaging</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://botlink.appscriptify.com/cdn/botlink/botlink.js" AS_KEY="as_pub_3f7e59e05c2bf95c"></script>
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">🌿 SeaArsh</div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/shop">Shop</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/cart" class="cart-btn">🛒 Cart</a></li>
+        </ul>
+    </nav>
+
+    <!-- Product Section -->
+    <section class="product-detail">
+        <div class="product-image">
+            <img src="{{ url_for('static', filename=product.image) }}" alt="{{ product.name }}">
+        </div>
+        <div class="product-info">
+            <h1>{{ product.name }}</h1>
+            <p class="product-desc">{{ product.description }}</p>
+            <h2 class="product-price">₹{{ product.price }}</h2>
+            <button class="btn add-to-cart" data-id="{{ product.id }}">Add to Cart</button>
+            <a href="/shop" class="btn-outline">← Back to Shop</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 SeaArsh — Sustainable Packaging for a Better Tomorrow.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/product.js') }}"></script>
+</body>
+</html>

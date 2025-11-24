@@ -1,0 +1,144 @@
+body {
+    background: #0d0d0d;
+    color: #ddd;
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.cart-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+/* Container positioned relative so checkbox can be placed inside */
+.cart-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Checkbox placed on the far right */
+.cart-item .select-item {
+    position: absolute;
+    right: 20px;
+    top: 75%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+
+    cursor: pointer;
+
+    /* Hide default checkbox */
+    appearance: none;
+    -webkit-appearance: none;
+
+    border: 2px solid #888;
+    border-radius: 4px;
+    background: #fff;
+}
+
+/* When checked: custom style */
+.cart-item .select-item:checked {
+    background: #3b82f6; /* blue */
+    border-color: #3b82f6;
+}
+
+/* Add checkmark */
+.cart-item .select-item:checked::after {
+    content: "✔";
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -58%);
+}
+
+
+.cart-item img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.cart-details {
+    flex-grow: 1;
+}
+
+.cart-details h2 {
+    margin: 0;
+    color: #fff;
+}
+
+.price {
+    color: #0aff9d;
+    font-size: 1.1rem;
+    margin-top: 5px;
+}
+
+.qty-controls {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.qty-btn {
+    background: #333;
+    border: none;
+    padding: 8px 12px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.qty-btn:hover {
+    background: #555;
+}
+
+.qty {
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.item-total {
+    font-size: 18px;
+    color: #0aff9d;
+}
+
+.cart-summary {
+    text-align: right;
+    margin-top: 30px;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+}
+
+.checkout-btn {
+    margin-top: 15px;
+    padding: 12px 25px;
+    font-size: 16px;
+    background: #0aff9d;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.checkout-btn:hover {
+    background: #14c77a;
+}
+

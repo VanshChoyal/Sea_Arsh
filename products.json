@@ -1,0 +1,26 @@
+[
+    {
+        "id": "123",
+        "name": "Seaweed Packaging",
+        "price": 249,
+        "category": "bags",
+        "description": "Strong, reusable, waterproof and 100% biodegradable carry bags made from seaweed fiber.",
+        "image": "images/img1.jpg"
+    },
+    {
+        "id": "124",
+        "name": "Food Packaging Wraps",
+        "price": 199,
+        "category": "wraps",
+        "description": "Compostable food wraps made from natural seaweed extracts, ideal for eco-conscious restaurants.",
+        "image": "images/img2.avif"
+    },
+    {
+        "id": "125",
+        "name": "Eco-Friendly Films",
+        "price": 299,
+        "category": "films",
+        "description": "Durable and elegant takeaway boxes that decompose naturally within 60 days.",
+        "image": "images/img3.jpg"
+    }
+]

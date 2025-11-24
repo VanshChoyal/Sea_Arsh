@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - SeaArsh</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/checkout.css') }}" />
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="https://botlink.appscriptify.com/cdn/botlink/botlink.js" AS_KEY="as_pub_3f7e59e05c2bf95c"></script>
+
+</head>
+<body class="dark">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">🌿 SeaArsh</div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/shop">Shop</a></li>
+            <li><a href="/cart">Cart</a></li>
+            <li><a href="/checkout" class="active">Checkout</a></li>
+        </ul>
+    </nav>
+
+    <section class="checkout">
+        <h1>Checkout</h1>
+        <p>Review your selected items and enter delivery details.</p>
+
+        <div id="checkout-items"></div>
+
+        <form class="address-form">
+            <h2>Delivery Information</h2>
+
+            <label>Full Name</label>
+            <input type="text" id="full-name" placeholder="Enter your full name" required />
+
+            <label>Phone Number</label>
+            <input type="text" id="phone" placeholder="Enter your phone number" required />
+
+            <label>Address Line 1</label>
+            <input type="text" id="address1" placeholder="House / Apartment / Street" required />
+            <div class="flex-row">
+                <div>
+                    <label>City</label>
+                    <input type="text" id="city" placeholder="City" required />
+                </div>
+                <div>
+                    <label>State</label>
+                    <input type="text" id="state" placeholder="State" required />
+                </div>
+            </div>
+
+            <label>Country</label>
+            <input type="text" id="country" placeholder="Country" required />
+
+            <label>Pincode</label>
+            <input type="text" id="pincode" placeholder="Pincode" required />
+        </form>
+
+        <div class="summary-box">
+            <h2>Order Summary</h2>
+
+            <div class="row">
+                <span>Subtotal</span>
+                <span id="subtotal">₹0</span>
+            </div>
+
+            <div class="row">
+                <span>GST (5%)</span>
+                <span id="gst">₹0</span>
+            </div>
+
+            <div class="row total">
+                <span>Total</span>
+                <span id="grand-total">₹0</span>
+            </div>
+
+            <button id="pay-btn" class="pay-btn">Proceed to Pay</button>
+        </div>
+    </section>
+
+    <script src="{{ url_for('static', filename='js/checkout.js') }}"></script>
+</body>
+</html>

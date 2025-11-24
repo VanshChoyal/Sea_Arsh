@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Connect to static/css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+    <title>Login</title>
+</head>
+<body>
+    <main class="login-container">
+        <form id="login-form" action="/api/login" method="post" class="login-form">
+            <h1>Sign in</h1>
+
+            <label for="username">Username / Email</label>
+            <input id="username" name="username" type="text" required autofocus>
+
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" required>
+
+            <button type="submit" class="submit-btn">Sign in</button>
+        </form>
+
+    <p class="signup">Don't have an account? <a id="signup-link" href="/auth/signup">Create one.</a></p>
+    </main>
+
+    <!-- Connect to static/js -->
+    <script src="{{ url_for('static', filename='js/login.js') }}"></script>
+</body>
+</html>

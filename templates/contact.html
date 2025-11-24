@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SeaArsh</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
+    <script src="https://botlink.appscriptify.com/cdn/botlink/botlink.js" AS_KEY="as_pub_3f7e59e05c2bf95c"></script>
+
+</head>
+<body class="dark">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">🌿 SeaArsh</div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/shop">Shop</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact" class="active">Contact</a></li>
+            <li><a href="/cart" class="cart-btn">🛒 Cart</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <h1>Get In Touch</h1>
+        <p>Have questions? Need help? We're here to assist you.</p>
+    </section>
+
+    <!-- Contact Cards -->
+    <section class="contact-cards">
+        <div class="card">
+            <h2>📞 Call Us</h2>
+            <p>+91 9082564762</p>
+            <p>Mon – Fri, 9:00 AM – 6:00 PM</p>
+        </div>
+        <div class="card">
+            <h2>📧 Email</h2>
+            <p>seaarsh.global04@gmail.com</p>
+            <p>We reply within 24 hours.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form-section">
+        <h2>Send Us a Message</h2>
+        <p>Fill out the form and we’ll get back to you soon.</p>
+
+        <form id="contact-form" class="contact-form">
+            <div class="form-row">
+                <input type="text" name="full_name" placeholder="Full Name" required>
+                <input type="email" name="email_address" placeholder="Email Address" required>
+            </div>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" rows="6" placeholder="Write your message..." required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+
+        <p class="form-status"></p>
+    </section>
+
+    <!-- Social -->
+    <section class="social">
+        <h2>Connect With Us</h2>
+        <div class="social-links">
+            <a href="#" class="social-btn">Instagram</a>
+            <a href="#" class="social-btn">X (Twitter)</a>
+            <a href="#" class="social-btn">LinkedIn</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 SeaArsh — Let's create a greener future together.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/contact.js') }}"></script>
+</body>
+</html>

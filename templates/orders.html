@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Orders</title>
+    <link rel="stylesheet" href="/static/css/orders.css">
+    <script src="https://botlink.appscriptify.com/cdn/botlink/botlink.js" AS_KEY="as_pub_3f7e59e05c2bf95c"></script>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="toggle-area">
+            <label>
+                <input type="checkbox" id="toggleCancelled"> Show Cancelled Orders
+            </label>
+        </div>
+        <h1>Your Orders</h1>
+        <div id="orders-list" class="orders-list">
+            <p class="loading">Loading orders...</p>
+        </div>
+    </div>
+
+    <script src="/static/js/orders.js"></script>
+</body>
+</html>

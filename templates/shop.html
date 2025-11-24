@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | SeaWeed Packaging</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/shop.css') }}">
+    <script src="https://botlink.appscriptify.com/cdn/botlink/botlink.js" AS_KEY="as_pub_3f7e59e05c2bf95c"></script>
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">🌿 SeaArsh</div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/shop" class="active">Shop</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/cart" class="cart-btn">🛒 Cart</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Shop Our Eco-Friendly Products</h1>
+        <p>Discover sustainable alternatives — packaging that loves the planet.</p>
+    </section>
+
+    <!-- Filter & Search Bar -->
+    <section class="filter-bar">
+        <input type="text" id="search" placeholder="Search products...">
+        <select id="filter">
+            <option value="all">All Categories</option>
+            <option value="bags">Carry Bags</option>
+            <option value="wraps">Food Wraps</option>
+            <option value="films">Films</option>
+        </select>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="shop-products">
+        <div class="product-grid">
+            <div class="product-card" data-category="bags" data-id="123">
+                <img src="{{ url_for('static', filename='images/img1.jpg') }}" alt="Seaweed Carry Bag">
+                <h3>Seaweed Carry Bags</h3>
+                <p>Reusable, waterproof, and biodegradable.</p>
+                <span class="price">₹249</span>
+                <button class="btn add-to-cart">View Details</button>
+            </div>
+            <div class="product-card" data-category="films" data-id="125">
+                <img src="{{ url_for('static', filename='images/img3.jpg') }}" alt="Eco Films">
+                <h3>Eco-Friendly Films</h3>
+                <p>Perfect for eco-conscious restaurants.</p>
+                <span class="price">₹299</span>
+                <button class="btn add-to-cart">View Details</button>
+            </div>
+            <div class="product-card" data-category="bags" data-id="125">
+                <img src="{{ url_for('static', filename='images/img4.jpg') }}" alt="Tote Bag">
+                <h3>Biodegradable Tote Bag</h3>
+                <p>Durable, elegant, and sustainable.</p>
+                <span class="price">₹279</span>
+                <button class="btn add-to-cart">View Details</button>
+            </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 SeaArsh — Sustainable Packaging for a Better Future.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/shop.js') }}"></script>
+</body>
+</html>

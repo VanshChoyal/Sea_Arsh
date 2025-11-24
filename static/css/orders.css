@@ -1,0 +1,137 @@
+/* -----------------------------------
+   Modern Dark Professional Theme
+-------------------------------------*/
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background: #0b0c10;
+    color: #e5e6eb;
+    font-family: "Inter", sans-serif;
+    padding: 30px 0;
+}
+
+.container {
+    width: 92%;
+    max-width: 950px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 28px;
+    font-size: 32px;
+    font-weight: 600;
+    color: #c9d1ff;
+}
+
+.orders-list {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+/* ORDER CARD */
+.order-card {
+    background: #121317;
+    border: 1px solid #1f2025;
+    padding: 22px;
+    border-radius: 14px;
+    transition: 0.25s ease;
+}
+
+.order-card:hover {
+    border-color: #4755ff;
+    box-shadow: 0 0 22px rgba(71, 85, 255, 0.18);
+    transform: translateY(-3px);
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.order-header strong {
+    font-size: 17px;
+    color: #aebaff;
+}
+
+.order-id {
+    opacity: 0.7;
+    font-size: 14px;
+}
+
+.order-items {
+    margin: 10px 0 15px 0;
+    border-left: 2px solid #272932;
+    padding-left: 12px;
+}
+
+.order-items div {
+    padding: 6px 0;
+    border-bottom: 1px solid #1f2025;
+}
+
+.order-items div:last-child {
+    border-bottom: none;
+}
+
+.status {
+    margin-top: 10px;
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+.delivery {
+    margin-top: 6px;
+    font-size: 14px;
+    color: #8bc6ff;
+}
+
+/* BUTTONS */
+.buttons {
+    display: flex;
+    gap: 14px;
+    margin-top: 14px;
+}
+
+button {
+    padding: 9px 18px;
+    border-radius: 7px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.reorder-btn {
+    background: #5362ff;
+    color: white;
+}
+
+.reorder-btn:hover {
+    background: #3c48dd;
+}
+
+.cancel-btn {
+    background: #ff5555;
+    color: white;
+}
+
+.cancel-btn:hover {
+    background: #e04444;
+}
+
+.toggle-area {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: #b7bdfc;
+}
+
+.toggle-area input {
+    transform: scale(1.2);
+    margin-right: 8px;
+}

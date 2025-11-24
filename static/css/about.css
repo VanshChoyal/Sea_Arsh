@@ -1,0 +1,223 @@
+/* General Dark Theme */
+body.dark {
+    background: #0d0d0d;
+    color: #e5e5e5;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #111;
+    border-bottom: 1px solid #222;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #e5e5e5;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color: #00ff9d;
+}
+
+/* Hero Section */
+.about-hero {
+    display: flex;
+    align-items: center;
+    padding: 80px;
+    gap: 50px;
+}
+
+.about-hero img {
+    width: 45%;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #00ffaa30;
+}
+
+.about-hero .text h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+/* Story Section */
+.story-section {
+    padding: 70px;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.story-section p {
+    opacity: 0.85;
+    line-height: 1.7rem;
+    margin-bottom: 20px;
+}
+
+/* Technology Section */
+.technology {
+    padding: 70px;
+    text-align: center;
+}
+
+.tech-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.tech-card {
+    width: 22%;
+    min-width: 250px;
+    background: #111;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #222;
+    transition: 0.3s;
+}
+
+.tech-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 15px #00ff9d30;
+}
+
+.tech-card h3 {
+    color: #00ff9d;
+}
+
+/* Values */
+.values {
+    padding: 70px;
+    text-align: center;
+}
+
+.value-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.value-card {
+    width: 22%;
+    min-width: 250px;
+    background: #111;
+    padding: 25px;
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid #222;
+}
+
+.value-card h3 {
+    color: #00ff9d;
+}
+
+/* Impact Section */
+.impact {
+    padding: 70px;
+    text-align: center;
+}
+
+.impact p {
+    width: 70%;
+    margin: auto;
+    opacity: 0.85;
+}
+
+.impact-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.stat {
+    background: #111;
+    border: 1px solid #222;
+    padding: 30px 40px;
+    border-radius: 15px;
+    text-align: center;
+    width: 20%;
+    min-width: 200px;
+}
+
+.stat h3 {
+    color: #00ff9d;
+    font-size: 2rem;
+}
+
+/* Team Section */
+.team {
+    padding: 70px;
+    text-align: center;
+}
+
+.team-grid {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    width: 20%;
+    min-width: 220px;
+    background: #111;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #222;
+    transition: 0.3s;
+}
+
+.team-card:hover {
+    box-shadow: 0 0 20px #00ff9d20;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #777;
+    border-top: 1px solid #222;
+}
+
+/* Scroll Animation */
+.hidden {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.8s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.growth {
+    padding: 50px;
+    text-align: center;
+}
+
+.graph-container {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+}
