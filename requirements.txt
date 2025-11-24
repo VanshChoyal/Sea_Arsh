@@ -1,3 +1,4 @@
 Flask
 razorpay
+gunicorn
 python-dotenv
